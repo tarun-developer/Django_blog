@@ -1,0 +1,13 @@
+{% extends "polls/header.html" %}
+{% block content %}
+
+<h3><a href="/blog/{{details.id}}">{{ details.title }}</a></h3>
+<h6>  {{ details.date }}</h6>
+
+<div class = "container" >
+	<div class=col-sm-8>
+	{{ details.body|safe|linebreaks}}</div>
+</div>
+<br>
+<br>
+{% endblock %}
