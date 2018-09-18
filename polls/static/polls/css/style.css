@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+#color {
+  color: rgb(51, 51, 145);
+}
+.rightcolumn {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.header {
+  padding: 30px;
+  font-size: 50px;
+
+  align-content: center;
+  text-align: center;
+  background: rgb(235, 231, 231);
+}
+/* Fake image */
+.fakeimg {
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  padding: 2px;
+  margin: 5px;
+}
+#img {
+  border: 2px black;
+  padding: 10px;
+  transform: rotate(90deg);
+}
+
+#foot {
+  margin: 0 auto;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  align-content: center;
+  padding-top: 20px;
+  background-color: rgb(228, 225, 220);
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: white;
+}
+html {
+  margin: 0 auto;
+  padding: 0px;
+}

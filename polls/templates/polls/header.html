@@ -1,189 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-	<title>Tarun Khandagre</title>
-	<meta charset="utf-8" />
-	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'polls/css/bootstrap.min.css' %}" type = "text/css"/>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
-	
-	<style type="text/css">
-		* {
-			box-sizing: border-box;
-		}
-		#color{
-			color:teal;
-		}
-		.rightcolumn {
-			float: right;
-			width: 30%;
-			padding-left: 20px;
-		}
-	
-		
-		@media screen and (max-width: 800px) {
-			 .rightcolumn {   
-				width: 100%;
-				padding: 0;
-			}
-		}
-
-		.header {
-			padding: 30px;
-			font-size: 50px;
-			
-			align-content: center;
-			text-align: center;
-			background: rgb(199, 186, 186);
-		}
-		/* Fake image */
-		.fakeimg {
-			background-color: #aaa;
-			width: 100%;
-			padding: 20px;
-		}
-		
-		/* Add a card effect for articles */
-		.card {
-			 background-color:rgb(185, 174, 174);
-			 padding: 20px;
-			 margin-top: 20px;
-			 margin-bottom: 10px;
-		}
-		
+<head>
+	<title>Tarun Khandagare</title>
+	<meta charset="utf-8" /> {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'polls/css/bootstrap.min.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'polls/css/style.css' %}" type="text/css" />
 
 
-
-
-		li{
-			padding: 2px;
-			margin: 5px;
-		}
-		#img{
-		
-				border: 2px black;
-			 padding: 10px;
-				transform: rotate(90deg);
-		
-		
-		}
-		
-	
-		#foot{
-		margin: 0 auto;
-		width:100%;
-		height: 30%;
-		text-align: center;
-		align-content: center;
-				padding-top:20px;
-		background-color: rgb(146, 145, 143);
-		}
-		body{
-			font-family: Arial;
-			padding: 10px;
-			background: white;
-		}
-		html{
-			margin:0 auto;
-		padding:0px;	}
-	</style>
 </head>
+
 <body class="body" style="background-color:#fcfcfc">
 	<div class="container-fluid" style="min-height:90%; ">
 
-			<div class="header"id='head'>
-					<h2>Django Blog</h2>
-				  </div>
+		<div class="header" id='head'>
+			<h2>Django Blog</h2>
+		</div>
 
 
 
 
 		<div class="row">
-			  <div class="col-sm-2">
-				  <br>
-				  <center>
-					<div id="img"><img src="{% static 'polls/img/profile.jpg' %}" class="responsive-img" style='max-height:150px; ' padding="5px;"alt="face">
-				  </div></center>
-			  </div>
-			  <div class="col-sm-6">
-				  <br>
-
-				  <br>
-				  <center>
-						<h3>TARUN KHANDAGARE<br></h3>
-					<h5><div id="color">Internshala student partner</div></h5>
-					<h6>2nd year B.E,<br> Computer Science & Engineering,<br> JNCT Bhopal
-						</h6>
-						<h6>Python Programmer</h6>
-							</center>
+			<div class="col-sm-2">
+				<br>
+				<center>
+					<div id="img">
+						<img src="{% static 'polls/img/profile.jpg' %}" class="responsive-img" style='max-height:150px; ' padding="5px;" alt="face">
 					</div>
-					<div class="col-sm-4">
-							<br>
-		  
-							<br>
-							<center>
-								  <h3>Home Adress<br></h3>
-							  <h5><div id="color">Sonahill colony chakkar road betul</div></h5>
-							  <h6>Betul (M.P.) <br> <h3>Local Address</h3><h6>74 Bungalow Bhopal (M.P.)
-							  </h6>
-						
-									  </center>
-							  </div>
+				</center>
+			</div>
+			<div class="col-sm-6">
+				<br>
+
+				<br>
+				<center>
+					<h3>TARUN KHANDAGARE
+						<br>
+					</h3>
+					<h5>
+						<div id="color">Internshala student partner</div>
+					</h5>
+					<h6>2nd year B.E,
+						<br> Computer Science & Engineering,
+						<br> JNCT Bhopal
+					</h6>
+					<h6>Python Programmer</h6>
+				</center>
+			</div>
+			<div class="col-sm-4">
+				<br>
+
+				<br>
+				<center>
+					<h3>Home Adress
+						<br>
+					</h3>
+					<h5>
+						<div id="color">Sonahill colony chakkar road betul</div>
+					</h5>
+					<h6>Betul (M.P.)
+						<br>
+						<h3>Local Address</h3>
+						<h6>74 Bungalow Bhopal (M.P.)
+						</h6>
+
+				</center>
+			</div>
 		</div>
 
 		<div class="row">
-				<div class="col-sm-2">
-					
+			<div class="col-sm-2">
+
 				<br>
-	
+
 				<br>
-				
-				 <!-- Great, til you resize. -->
+
+				<!-- Great, til you resize. -->
 				<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
 				<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
 					<ul class="nav nav-pills nav-stacked">
-					<li><a href='/'>Home</a></li>
-					<li><a href='/blog/'>Blog</a></li>
-					<li><a href='/contact/'>Contact</a></li>
+						<li>
+							<a href='/'>Home</a>
+						</li>
+						<li>
+							<a href='/blog/'>Blog</a>
+						</li>
+						<li>
+							<a href='/contact/'>Contact</a>
+						</li>
 					</ul>
-				</div> <!--well bs-sidebar affix-->
-			</div> 
-	
-		<div class="col-sm-6">
-		  
+				</div>
+				<!--well bs-sidebar affix-->
+			</div>
+
+			<div class="col-sm-6">
+
 				<div class='container-fluid'>
-				<br><br>
-				<center>
-					 {% block content %}
-					 {% endblock %}	</center>
+					<br>
+					<br>
+					<center>
+						{% block content %} 
+						{% endblock %} </center>
 				</div>
-				</div>
-				
-					
-				<div class="rightcolumn">
+			</div>
+
+
+			<div class="rightcolumn">
 				<div class="card">
-								<h2>About Me</h2>
-								<img src="{% static 'polls/img/tarun.png' %}" class="fakeimg" style='height:300px; ' padding="1px;"alt="face">
-							
-								<p>Full Stack developer</p>
-							  </div>
-							  
-					  <div class="card">
-						<h3>Follow Me on Github</h3>
-						<p><a href="https://github.com/tarun-developer">https://github.com/tarun-developer</a></p>
-					  </div>
-									
-								
-								  </div>
-								</div></div>
-				
-			
+					<h2>About Me</h2>
+					<img src="{% static 'polls/img/tarun.png' %}" class="fakeimg" style='height:300px; ' padding="1px;" alt="face">
+
+					<p>Full Stack developer</p>
+				</div>
+
+				<div class="card">
+					<h3>Follow Me on Github</h3>
+					<p>
+						<a href="https://github.com/tarun-developer">https://github.com/tarun-developer</a>
+					</p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
 	<footer>
-		<div class="container-fluid"id="foot" style='margin:0 auto'>
-			<center><p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
-			</center></div>
-	</footer>	
+		<div class="container-fluid" id="foot" style='margin:0 auto'>
+			<center>
+				<p>
+					<a href="#" target="blank">Contact</a> |
+					<a href="#" target="blank">LinkedIn</a> |
+					<a href="#" target="blank">Twitter</a> |
+					<a href="#" target="blank">Google+</a>
+				</p>
+			</center>
+		</div>
+	</footer>
 
 
 </body>
